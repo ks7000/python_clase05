@@ -1,6 +1,7 @@
 # -*- encoding=utf-8 -*-
 import os
 import sys
+import glob
 def lee(*args):
     for i in args:
         if isinstance(i,str):
@@ -25,6 +26,7 @@ def lee(*args):
                             g.write(linea)
                         f.close()
                         g.close()
+                        lee_archivo_varias_lineas(i)
             else:
                 print "El archivo no existe."
 
@@ -39,6 +41,25 @@ def existe_archivo(archivo):
             return True
         else:
             return False
+
+def lee_archivo_varias_lineas(archivo):
+    f=open(archivo)
+    print "--------------------------------"
+    print "Lee varias lineas sin ciclo for:"
+    print (f.readlines())
+    f.close
+
+#def lista_txt():
+#    nombres = os.listdir(os.getcwd))
+#    for i in nombres:
+#        cad = i
+#        if string.find(cad,"*.txt"):
+#            print cad
         
+            
+if sys.platform == "linux2":
+    os.system('clear')
+#lista_txt()
+print glob.glob('*.txt')
 archivo = raw_input("Introduzca el(los) nombre(s) de el(os) archivo(s) original(es):");
 lee(archivo)
