@@ -1,0 +1,5 @@
+Este archivo fue copiado de C:\Users\Jimmy\Documents\GitHub\python_clase05\archivo.txtLuis
+Pedro
+Juan
+Marta
+Maria
