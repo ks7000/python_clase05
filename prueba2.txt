@@ -1,0 +1,2 @@
+Este archivo fue copiado de /home/academia/python_clase05/prueba.txtVin  Cerf creador del protocolo tcp/ip
+George P. Landow cyberspace and hypertext
